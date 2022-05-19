@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "recipe1",
+        "image": "PROVA.jpg",
+        "ingredients": [
+            {
+                "id": 1,
+                "name": "ingredient1"
+            },
+            {
+                "id": 2,
+                "name": "ingredient2"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "recipe2",
+        "ingredients": [
+            {
+                "id": 1,
+                "name": "ingredient1"
+            },
+            {
+                "id": 2,
+                "name": "ingredient2"
+            },
+            {
+                "id": 3,
+                "name": "ingredient3"
+            }
+        ]
+    }
+]

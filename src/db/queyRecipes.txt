@@ -1,0 +1,17 @@
+--recipes table : PRIMARY KEY (id)
+--ingredients table : PRIMARY KEY (id)
+--recipes_ingredients table : PRIMARY KEY (id) foreign key (recipe_id) references recipes(id) foreign key (ingredient_id) references ingredients(id)
+
+--
+SELECT r.id, r.name,r.image, i.id, i.name
+FROM recipes r 
+    JOIN recipes_ingredients ri ON r.id = ri.recipe_id
+    JOIN ingredients i ON ri.ingredient_id = i.id
+
+-- 
+SELECT i.id, i.name
+FROM ingredients i
+WHERE i.name = ?
+
+--
+INSERT INTO recipes_ingredients (id,recipe_id, ingredient_id) VALUES (AUTOINCREMENT,?, ?)
